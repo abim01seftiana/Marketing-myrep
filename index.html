@@ -1,0 +1,622 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paket MyRepublic | Authorized Sales Partner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #5b2c6f;
+      --secondary: #d2b4de;
+      --accent: #9b59b6;
+      --bg: #f4f3f8;
+      --text: #2c2c2c;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(180deg, var(--primary), transparent);
+      color: white;
+      padding: 3rem 1rem 8rem;
+      text-align: center;
+      position: relative;
+    }
+    header img.logo {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      width: 200px;
+      z-index:200;
+    }
+   .hero {
+      text-align: center;
+      padding: 4rem 1rem 6rem;
+      margin-top: -6rem;
+      z-index: 2;
+    }
+    .hero h2, .hero p {
+      background: linear-gradient(90deg, #5b2c6f, #d2b4de);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 2rem 1rem;
+    }
+    .images img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .packages {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .packages h3 {
+      text-align: center;
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: flex;
+      overflow-x: auto;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      flex: 0 0 250px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+    .badge {
+      background: var(--accent);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border-radius: 12px;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .card .mbps {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .card .price {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin: 0.3rem 0;
+    }
+    .card button {
+      margin-top: auto;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 10px;
+      width: 100%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .combo-note {
+      text-align: center;
+      margin: 2rem 0;
+      font-weight: bold;
+    }
+    .form {
+      padding: 4rem 1rem;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    form input, form select {
+      padding: 0.9rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    form button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      text-decoration: none;
+    }
+  </style>
+  
+  
+ 
+<body>
+  <header>
+    <h1>Paket Internet MyRepublic</h1>
+    <p>Internet fiber cepat, stabil, tanpa batas kuota</p>
+    <img class="logo" src="img/logo4.png" alt="MyRepublic Logo" />
+    
+  </header>  <section class="hero">
+    <h2>Upgrade Digital Life Kamu Sekarang!</h2>
+    <p>Pilih paket sesuai kebutuhan dan nikmati promo upgrade kecepatan hingga 3 bulan!</p>
+  </section>  <section class="images">
+    <img src="img/pages1.jpeg" alt="Promo Internet">
+    <img src="img/pages2.jpeg" alt="Promo Wifi">
+  </section>  <section class="packages">
+    <h3>Pilihan Paket Promo</h3>
+    
+    
+      <style>
+    
+    .slider-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+      background: #fff;
+      border-radius: 16px;
+      border: 2px solid #a99adf;
+      box-shadow: 0 8px 20px rgba(76, 0, 130, 0.15);
+      max-width: 300px;
+      min-width: 280px;
+      transition: transform 0.4s ease;
+      background-image: linear-gradient(145deg, #eae4ff 0%, #fefeff 100%);
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .card-body {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #5f27cd;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #341f97;
+      margin: 10px 0 6px;
+    }
+
+    .subtext {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .features {
+      text-align: left;
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .features img {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #ff6b6b;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .badge.promo {
+      background: #6c5ce7;
+    }
+
+    .card button {
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: #6c5ce7;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background: #5a4fcf;
+    }
+  </style>
+
+<div class="slider-container" id="paketContainer"></div>
+
+<script>
+const paketList = [
+  { nama: 'Jet', kecepatan: '20 Mbps', harga: 'Rp 218.000', badge: '', img: 'img/20mbps.jpg' },
+  { nama: 'Value', kecepatan: '30 Mbps', harga: 'Rp 227.000', badge: 'Best Seller', img: 'img/30mbps.jpeg' },
+  { nama: 'Value', kecepatan: '40 Mbps - Upgrade Speed', harga: 'Rp 260.000', badge: 'Promo', img: 'img/40mbps.png' },
+  { nama: 'Fast', kecepatan: '50 Mbps - Upgrade 100 Mbps', harga: 'Rp 277.000', badge: 'Promo', img: 'img/50mbps.jpeg' },
+  { nama: 'Nova', kecepatan: '100 Mbps - Upgrade 200 Mbps', harga: 'Rp 333.000', badge: 'Promo', img: 'img/100mbps.jpeg' },
+  { nama: 'My Gamer', kecepatan: '250 Mbps - Upgrade 350 Mbps', harga: 'Rp 444.000', badge: 'Promo', img: 'img/250mbps.jpeg' },
+  { nama: 'Prime', kecepatan: '500 Mbps', harga: 'Rp 555.000', badge: '', img: 'img/500mbps.jpeg' },
+];
+    
+const container = document.getElementById('paketContainer');
+
+paketList.forEach(paket => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  const message = `Halo saya ingin tau paket ${paket.nama} (${paket.kecepatan}), apakah wilayah saya tercover?`;
+  const url = `https://wa.me/6281282874476?text=${encodeURIComponent(message)}`;
+  card.innerHTML = `
+    ${paket.badge ? `<div class="badge ${paket.badge === 'Promo' ? 'promo' : ''}">${paket.badge}</div>` : ''}
+  <img src="${paket.img}" alt="${paket.nama} ${paket.kecepatan}">
+    <div class="card-body">
+      <div class="card-title">${paket.nama} <span style="color:#888; font-weight: normal;">(${paket.kecepatan})</span></div>
+      <div class="price">${paket.harga}</div>
+      <div class="subtext">Harga termasuk PPN 11%</div>
+      <ul class="features">
+        <li><img src="https://img.icons8.com/ios-filled/50/speed.png"/>Gratis Upgrade Speed (jika tersedia)</li>
+        <li><img src="https://img.icons8.com/ios-filled/50/wifi.png"/>Internet UNLIMITED</li>
+        <li><img src="https://img.icons8.com/ios-filled/50/router.png"/>Include ONT/Modem</li>
+        <li><img src="https://img.icons8.com/ios-filled/50/maintenance.png"/>Gratis Instalasi Rp500.000</li>
+        <li><img src="https://img.icons8.com/ios-filled/50/laptop.png"/>Ideal untuk beberapa device</li>
+        <li><img src="https://img.icons8.com/ios-filled/50/upload.png"/>DL & UL 1:1 (up to kecepatan)</li>
+      </ul>
+      <a href="${url}" target="_blank"><button>Saya ingin paket ini</button></a>
+    </div>
+  `;
+  container.appendChild(card);
+});
+</script>
+  
+  </style>
+
+    <p class="combo-note">Tambahan Combo TV: +Rp94.350/bulan</p>
+    
+    
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f2f8;
+      margin: 0;
+      padding: 0;
+    }
+    .steps-wrapper {
+      background: linear-gradient(to right, #4A148C, #7E57C2);
+      padding: 40px 20px;
+      color: white;
+    }
+    .steps-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .steps-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .steps-container {
+      display: flex;
+      gap: 24px;
+      min-width: 600px;
+    }
+    .step-box {
+      min-width: 180px;
+      flex-shrink: 0;
+    }
+    .step-box i {
+      font-size: 28px;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .step-box strong {
+      font-size: 16px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .step-box p {
+      font-size: 14px;
+      margin: 0;
+    }
+    .form-container {
+      max-width: 520px;
+      background: #ffffff;
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4A148C;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    label {
+      font-weight: 600;
+      color: #4A148C;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .checkbox input {
+      margin-right: 8px;
+    }
+    button {
+      background: linear-gradient(to right, #7E57C2, #4A148C);
+      color: white;
+      padding: 14px;
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(to right, #4A148C, #311B92);
+    }
+    /* FontAwesome CDN */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+  </style>
+</head>
+<body>
+
+  <div class="steps-wrapper">
+    <div class="steps-title">Langkah Pendaftaran:</div>
+    <div class="steps-scroll">
+      <div class="steps-container">
+        <div class="step-box">
+          <i class="fas fa-user-edit"></i>
+          <strong>1. Registrasi</strong>
+          <p>Lengkapi dan kirim form berikut ini</p>
+        </div>
+        <div class="step-box">
+          <i class="fas fa-phone-volume"></i>
+          <strong>2. Verifikasi</strong>
+          <p>Tim kami akan segera menghubungi anda</p>
+        </div>
+        <div class="step-box">
+          <i class="fas fa-wifi"></i>
+          <strong>3. Instalasi</strong>
+          <p>Lacak proses instalasi dan nikmati layanan MyRepublic!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h2>Form Registrasi MyRepublic Style</h2>
+    
+    
+    <form action="https://formspree.io/f/xjkrgave" method="POST">
+  <label for="nama">Nama Lengkap*</label>
+  <input type="text" id="nama" name="nama" placeholder="Nama Lengkap Kamu" required>
+
+  <label for="hp">Nomor Handphone*</label>
+  <input type="text" id="hp" name="hp" placeholder="62 812 345 678" required>
+
+  <label for="email">Email*</label>
+  <input type="email" id="email" name="email" placeholder="emailkamu@domain.com" required>
+
+  <label for="alamat">Alamat Lengkap*</label>
+  <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat lengkap pemasangan" required>
+
+  <div class="checkbox">
+    <input type="checkbox" id="persetujuan" required>
+    <label for="persetujuan">Saya setuju bahwa data ini digunakan untuk proses registrasi MyRepublic</label>
+  </div>
+
+  <button type="submit">Daftar Sekarang</button>
+</form>
+    
+    
+    
+    
+    
+    
+  </div>
+    <!-- Tambahin ini sebelum </body> -->
+
+<!-- Modal confirmation box -->
+<div id="confirmationModal" style="
+  display:none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+">
+  <div style="
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 320px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  " id="modalContent">
+    <i class="fas fa-check-circle" style="font-size:48px; color:#4A148C; margin-bottom: 15px;"></i>
+    <h3>Data Anda Berhasil Dikirim!</h3>
+    <p>Sales kami akan segera menghubungi Anda.</p>
+    <button id="closeModalBtn" style="
+      margin-top: 20px;
+      background: #4A148C;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    ">Tutup</button>
+  </div>
+</div>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('registration-form');
+    const modal = document.getElementById('success-modal');
+    const modalContent = modal.querySelector('.modal-content');
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // 1. Tampilkan modal loading
+      modal.style.display = 'flex';
+      setTimeout(() => {
+        modalContent.style.transform = 'scale(1)';
+        modalContent.style.opacity = '1';
+      }, 10);
+
+      // 2. Disable tombol submit untuk mencegah spam
+      submitBtn.disabled = true;
+
+      // 3. Kirim data ke Formspree
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          console.log('✅ Form berhasil dikirim!');
+          form.reset(); // Opsional: reset form setelah sukses
+        } else {
+          console.error('❌ Form gagal dikirim:', await response.json());
+          alert('Terjadi kesalahan saat mengirim formulir.');
+        }
+      } catch (err) {
+        console.error('❌ Error jaringan:', err);
+        alert('Tidak dapat menghubungi server. Coba lagi nanti.');
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+
+    // 4. Tutup modal saat diklik
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.classList.contains('close')) {
+        modalContent.style.transform = 'scale(0.5)';
+        modalContent.style.opacity = '0';
+        setTimeout(() => {
+          modal.style.display = 'none';
+        }, 300);
+      }
+    });
+  });
+</script>
+  
+  
+  
+  
+    
+  </section>  <a class="whatsapp-float" href="https://wa.me/6281282874476" target="_blank" rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 36px; height: 36px;" />
+  </a>
+</body>
+</html>
